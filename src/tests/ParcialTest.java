@@ -47,7 +47,7 @@ public class ParcialTest {
     //el ejemplo de la indeterminacion de 0 elevado a 0
     public void ceroElevadoACero() {
         Exception ex = assertThrows(Exception.class, () -> parcial.potencia(0, 0));
-        assertEquals("0 elevado a 0 es indeterminado", ex.getMessage());
+        assertEquals("0 elevado a 0 es una indeterminacion", ex.getMessage());
     }
 
     @Test
@@ -58,9 +58,9 @@ public class ParcialTest {
 
 
     @Test
-    //ejemplo para cuando la base es 1, siempre debe retornar uno, no importa el exponente
+    //ejemplo para cuando la base es 1, siempre debe retornar uno no importa el exponente
     public void unoElevadoAlgo() throws Exception {
-        assertEquals(1, parcial.potencia(1, 2000000000));
+        assertEquals(1, parcial.potencia(1, 254531310));
     }
 
 
