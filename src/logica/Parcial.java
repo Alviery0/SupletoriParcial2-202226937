@@ -1,5 +1,5 @@
 package logica;
-
+//
 public class Parcial {
 
     public int potencia(int base, int exponente) throws Exception {
