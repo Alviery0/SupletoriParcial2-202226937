@@ -17,5 +17,7 @@ public class Parcial {
         if (base == 1) {
             return 1;
         }
+        
  
+}
 }
