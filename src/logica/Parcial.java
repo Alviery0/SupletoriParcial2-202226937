@@ -17,6 +17,7 @@ public class Parcial {
         if (base == 1) {
             return 1;
         }
+        //verigicacion si cuando la base es -1, y el exponente es par, es el mismo numero pero en positivo
         if (base == -1) {
             if (exponente % 2 == 0) {
                 return 1;
