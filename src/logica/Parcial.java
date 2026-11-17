@@ -1,5 +1,5 @@
 package logica;
-//
+
 public class Parcial {
 
     public int potencia(int base, int exponente) throws Exception {
@@ -17,7 +17,18 @@ public class Parcial {
         if (base == 1) {
             return 1;
         }
-        
- 
-}
+        if (base == -1) {
+            if (exponente % 2 == 0) {
+                return 1;
+            }
+            return -1;
+        }
+
+        long resultado = 1;   // long por si como en el caso anterior se pasa del rango de un int
+        //for normal para sacar el resultado, multiplica la base por la cantidad de veces que indique el parametro de exponente
+        for (int i = 0; i < exponente; i++) {
+            resultado = resultado * base;
+        }
+        return (int) resultado;
+    }
 }
